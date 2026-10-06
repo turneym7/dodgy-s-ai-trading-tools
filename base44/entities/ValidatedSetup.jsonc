@@ -17,6 +17,16 @@
         "short"
       ]
     },
+    "setup_type": {
+      "type": "string",
+      "enum": [
+        "IFVG",
+        "Structure Break",
+        "Liquidity Sweep",
+        "V-Shape Recovery",
+        "Other"
+      ]
+    },
     "entry_price": {
       "type": "number"
     },
@@ -33,8 +43,82 @@
         "A",
         "B",
         "C",
-        "D"
+        "F"
       ]
+    },
+    "score": {
+      "type": "number"
+    },
+    "score_setup": {
+      "type": "number"
+    },
+    "score_risk": {
+      "type": "number"
+    },
+    "score_emotional": {
+      "type": "number"
+    },
+    "override": {
+      "type": "boolean",
+      "default": false
+    },
+    "override_reason": {
+      "type": "string"
+    },
+    "rr_ratio": {
+      "type": "number"
+    },
+    "emotional_state": {
+      "type": "number"
+    },
+    "session": {
+      "type": "string"
+    },
+    "checklist": {
+      "type": "object",
+      "properties": {
+        "draw_on_liquidity": {
+          "type": "boolean",
+          "default": false
+        },
+        "structure_aligned": {
+          "type": "boolean",
+          "default": false
+        },
+        "candle_close_confirmed": {
+          "type": "boolean",
+          "default": false
+        },
+        "htf_bias_checked": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    },
+    "is_revenge": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_light_bulb": {
+      "type": "boolean",
+      "default": false
+    },
+    "trades_today": {
+      "type": "number"
+    },
+    "in_loss": {
+      "type": "boolean",
+      "default": false
+    },
+    "screenshot_uri": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "trade_taken": {
+      "type": "boolean",
+      "default": false
     },
     "result": {
       "type": "string",
@@ -42,12 +126,6 @@
         "validated",
         "rejected"
       ]
-    },
-    "rr_ratio": {
-      "type": "number"
-    },
-    "notes": {
-      "type": "string"
     },
     "validation_date": {
       "type": "string",

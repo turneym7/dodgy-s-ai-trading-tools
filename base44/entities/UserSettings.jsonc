@@ -10,6 +10,16 @@
     },
     "account_size": {
       "type": "number"
+    },
+    "default_instrument": {
+      "type": "string",
+      "enum": [
+        "NQ",
+        "ES",
+        "MNQ"
+      ],
+      "default": "NQ"
     }
-  }
+  },
+  "required": []
 }

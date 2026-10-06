@@ -2,15 +2,35 @@
   "name": "Rule",
   "type": "object",
   "properties": {
-    "text": {
-      "type": "string"
+    "rule_key": {
+      "type": "string",
+      "enum": [
+        "max_trades_per_day",
+        "only_a_plus_setups",
+        "only_ny_open_or_data_release",
+        "stop_after_daily_loss",
+        "validate_every_trade",
+        "journal_every_trade",
+        "no_emotional_trading",
+        "min_risk_reward",
+        "only_instrument",
+        "no_trading_after_losses",
+        "only_engineered_liquidity",
+        "close_based_stops",
+        "move_to_break_even",
+        "no_reentry_after_be_stop",
+        "only_light_bulb_live"
+      ]
     },
-    "active": {
+    "enabled": {
       "type": "boolean",
       "default": true
+    },
+    "value": {
+      "type": "string"
     }
   },
   "required": [
-    "text"
+    "rule_key"
   ]
 }
