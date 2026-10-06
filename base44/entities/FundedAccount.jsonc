@@ -1,0 +1,30 @@
+{
+  "name": "FundedAccount",
+  "type": "object",
+  "properties": {
+    "firm_name": {
+      "type": "string"
+    },
+    "account_size": {
+      "type": "number"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "payout_target": {
+      "type": "number"
+    },
+    "max_drawdown": {
+      "type": "number"
+    },
+    "current_pnl": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "firm_name",
+    "account_size"
+  ]
+}

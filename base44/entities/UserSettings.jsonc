@@ -1,0 +1,15 @@
+{
+  "name": "UserSettings",
+  "type": "object",
+  "properties": {
+    "daily_loss_limit": {
+      "type": "number"
+    },
+    "risk_per_trade": {
+      "type": "number"
+    },
+    "account_size": {
+      "type": "number"
+    }
+  }
+}

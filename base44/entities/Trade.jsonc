@@ -1,0 +1,76 @@
+{
+  "name": "Trade",
+  "type": "object",
+  "properties": {
+    "instrument": {
+      "type": "string",
+      "enum": [
+        "NQ",
+        "ES",
+        "MNQ"
+      ]
+    },
+    "direction": {
+      "type": "string",
+      "enum": [
+        "long",
+        "short"
+      ]
+    },
+    "entry_price": {
+      "type": "number"
+    },
+    "exit_price": {
+      "type": "number"
+    },
+    "stop_loss": {
+      "type": "number"
+    },
+    "take_profit": {
+      "type": "number"
+    },
+    "contracts": {
+      "type": "number",
+      "default": 1
+    },
+    "pnl": {
+      "type": "number",
+      "default": 0
+    },
+    "points": {
+      "type": "number",
+      "default": 0
+    },
+    "grade": {
+      "type": "string",
+      "enum": [
+        "A+",
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "validated": {
+      "type": "boolean",
+      "default": false
+    },
+    "emotional_state": {
+      "type": "number"
+    },
+    "setup_type": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "trade_date": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "instrument",
+    "direction"
+  ]
+}

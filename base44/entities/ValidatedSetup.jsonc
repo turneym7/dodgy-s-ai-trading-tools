@@ -1,0 +1,61 @@
+{
+  "name": "ValidatedSetup",
+  "type": "object",
+  "properties": {
+    "instrument": {
+      "type": "string",
+      "enum": [
+        "NQ",
+        "ES",
+        "MNQ"
+      ]
+    },
+    "direction": {
+      "type": "string",
+      "enum": [
+        "long",
+        "short"
+      ]
+    },
+    "entry_price": {
+      "type": "number"
+    },
+    "stop_loss": {
+      "type": "number"
+    },
+    "take_profit": {
+      "type": "number"
+    },
+    "grade": {
+      "type": "string",
+      "enum": [
+        "A+",
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "result": {
+      "type": "string",
+      "enum": [
+        "validated",
+        "rejected"
+      ]
+    },
+    "rr_ratio": {
+      "type": "number"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "validation_date": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "instrument",
+    "direction"
+  ]
+}
