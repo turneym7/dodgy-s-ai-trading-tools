@@ -19,6 +19,27 @@
         "MNQ"
       ],
       "default": "NQ"
+    },
+    "daily_trade_limit": {
+      "type": "number"
+    },
+    "active_sessions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "timezone": {
+      "type": "string",
+      "default": "America/New_York"
+    },
+    "theme": {
+      "type": "string",
+      "enum": [
+        "dark",
+        "light"
+      ],
+      "default": "dark"
     }
   },
   "required": []

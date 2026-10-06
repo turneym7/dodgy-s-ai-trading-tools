@@ -87,6 +87,24 @@
     "screenshot_uri": {
       "type": "string"
     },
+    "what_went_well": {
+      "type": "string"
+    },
+    "what_to_improve": {
+      "type": "string"
+    },
+    "rules_followed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rules_broken": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "notes": {
       "type": "string"
     },

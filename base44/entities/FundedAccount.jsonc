@@ -8,6 +8,14 @@
     "account_size": {
       "type": "number"
     },
+    "account_type": {
+      "type": "string",
+      "enum": [
+        "eval",
+        "funded"
+      ],
+      "default": "eval"
+    },
     "start_date": {
       "type": "string",
       "format": "date"
