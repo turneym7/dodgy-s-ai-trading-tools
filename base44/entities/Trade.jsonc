@@ -55,10 +55,36 @@
       "type": "boolean",
       "default": false
     },
+    "ivg_score": {
+      "type": "number"
+    },
     "emotional_state": {
       "type": "number"
     },
     "setup_type": {
+      "type": "string"
+    },
+    "session": {
+      "type": "string"
+    },
+    "is_light_bulb": {
+      "type": "boolean",
+      "default": false
+    },
+    "followed_plan": {
+      "type": "boolean",
+      "default": true
+    },
+    "rr_ratio": {
+      "type": "number"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "screenshot_uri": {
       "type": "string"
     },
     "notes": {
